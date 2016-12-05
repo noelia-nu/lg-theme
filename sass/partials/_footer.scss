@@ -1,0 +1,63 @@
+footer {
+  background-color: $footer-background;
+
+  a {
+    @include link($footer-txt-color, $footer-txt-color-hover !important);
+
+    &:hover {
+      @include transition-custom(color);
+    }
+  }
+
+  .expanded {
+    @extend %inline;
+    @include span(4.8);
+
+    > a {
+      @include link($footer-txt-color-hover !important, $footer-txt-color-hover !important);
+      display: block;
+      font-size: $h5-font-size;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .menu {
+      display: none;
+
+      @include breakpoint($lg) {
+        display: block;
+
+        li {
+          line-height: 26px;
+        }
+      }
+    }
+  }
+
+  .social-media.icon {
+    color: $footer-txt-color;
+    margin: 0 15px;
+  }
+}
+
+#main-footer {
+  @extend %clearfix;
+  margin: 15px 35px;
+}
+
+#footer-wrapper {
+  @extend %container;
+}
+
+#footer-extra {
+  @extend %clearfix;
+  padding: 15px;
+}
+
+#block-menu-menu-social-media {
+  float: right;
+
+  li {
+    @extend %inline;
+  }
+}

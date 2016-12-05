@@ -1,0 +1,29 @@
+#section1 {
+  background-image: url('../img/home--img-top.png');
+  background-size: cover;
+  ._animate--position {
+  	opacity: 0;
+  	h1, p {
+  		opacity: 1;
+  	}
+  }
+
+  h1 {
+    color: #fff;
+  }
+
+  @include breakpoint($sm) {
+    padding: 90px 0;
+  }
+}
+
+.Started {
+	&__item {
+		display: inline-block;
+		width: 100%;
+		display: none;
+	}
+	&__description {
+		opacity: 1!important;
+	}
+}

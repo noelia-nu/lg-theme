@@ -1,0 +1,11 @@
+{
+  "name": "Linux Graphics Theme",
+  "version": "1.0.0",
+  "dependencies": {
+    "html5shiv": "~3.6.2",
+    "font-awesome": "~4.5.0",
+    "breakpoint-sass": "^2.7.0",
+    "animate.css": "^3.5.2"
+  },
+  "devDependencies": {}
+}

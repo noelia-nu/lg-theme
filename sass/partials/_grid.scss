@@ -1,0 +1,89 @@
+%container {
+  @include clearfix;
+  box-sizing: border-box;
+  padding: 0 50px;
+}
+
+%clearfix {
+  &:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+%inline {
+  display: inline-block;
+  vertical-align: top;
+}
+
+._container {
+  @extend %container;
+}
+
+._show--xs,
+._show--sm,
+._show--md,
+._show--lg {
+  display: inherit;
+}
+
+._hide--xs,
+._hide--sm,
+._hide--md,
+._hide--lg {
+  display: none;
+}
+
+@for $i from 1 through 24 {
+  .col-xs-#{$i} {
+    @include span($i);
+  }
+}
+
+@include breakpoint($sm){
+  @for $i from 1 through 24 {
+    .col-sm-#{$i} {
+      @include span($i);
+    }
+  }
+
+  ._show--md,
+  ._show--lg {
+    display: none;
+  }
+}
+
+@include breakpoint($md){
+  @for $i from 1 through 24 {
+    .col-md-#{$i} {
+      @include span($i);
+    }
+  }
+
+  ._show--lg {
+    display: none;
+  }
+}
+
+@include breakpoint($lg){
+  @for $i from 1 through 24 {
+    .col-lg-#{$i} {
+      @include span($i);
+    }
+  }
+
+  ._show--lg {
+    display: inherit;
+  }
+
+  ._hide--lg {
+    display: none;
+  }
+
+  %container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0;
+  }
+}

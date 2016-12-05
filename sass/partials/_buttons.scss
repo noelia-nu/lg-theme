@@ -1,0 +1,85 @@
+%button {
+  border: none;
+  cursor: pointer;
+  padding: $btn-padding;
+  border-radius: $btn-radius;
+
+  &:hover {
+    @include transition-custom(all, 0.2s);
+  }
+}
+
+%primary-button {
+  @extend %button;
+  background-color: $primary-btn-background;
+  border: 2px solid $primary-btn-border-color;
+  color: $primary-btn-txt-color;
+
+  &:hover {
+    background-color: $primary-btn-background-hover;
+    border: 2px solid $primary-btn-border-color-hover;
+    color: $primary-btn-txt-color;
+  }
+}
+
+%secondary-button {
+  @extend %button;
+  background-color: $secondary-btn-background;
+  border: 2px solid $secondary-btn-border-color;
+  color: $secondary-btn-txt-color;
+
+  &:visited {
+    color: $secondary-btn-txt-color;
+
+    &:hover,
+    &.active {
+      background-color: $secondary-btn-background-hover;
+      border: 2px solid $secondary-btn-border-color-hover;
+      color: $secondary-btn-txt-color-hover;
+    }
+  }
+
+  &:hover,
+  &.active {
+    background-color: $secondary-btn-background-hover;
+    border: 2px solid $secondary-btn-border-color-hover;
+    color: $secondary-btn-txt-color-hover;
+  }
+}
+
+%secondary-button-light {
+  @extend %button;
+  background-color: $secondary-btn-light-background;
+  border: 2px solid $secondary-btn-light-border-color;
+  color: $secondary-btn-light-txt-color;
+
+  &:visited {
+    color: $secondary-btn-light-txt-color;
+
+    &:hover,
+    &.active {
+      background-color: $secondary-btn-light-background-hover;
+      border: 2px solid $secondary-btn-light-border-color-hover;
+      color: $secondary-btn-light-txt-color-hover;
+    }
+  }
+
+  &:hover,
+  &.active {
+    background-color: $secondary-btn-light-background-hover;
+    border: 2px solid $secondary-btn-light-border-color-hover;
+    color: $secondary-btn-light-txt-color-hover;
+  }
+}
+
+.cp-btn__primary {
+  @extend %primary-button;
+}
+
+.cp-btn__secondary {
+  @extend %secondary-button;
+}
+
+.cp-btn__secondary--light {
+  @extend %secondary-button-light;
+}

@@ -1,0 +1,140 @@
+// =============================================================================
+// @file:
+// VARIABLES for SASS/COMPASS
+// =============================================================================
+
+$primary-color-1: #29297a; //purple
+$primary-color-2: #003C71; //navy
+$primary-color-3: #00a4b4; //light blue
+
+$secondary-color-1: #817fc6; //lavander
+$secondary-color-2: #79797a; //pewter
+$secondary-color-3: #131214; //ash - dark blue
+
+// Grayscale
+// White
+$lightgray: #F0F2F4;
+$lightgray-l: #F6F7F8;
+$lightgray-ll: #FFF;
+
+// Gray
+$gray: #8C9196;
+$gray-l: #AFB2B6;
+$gray-ll: #D1D3D5;
+
+// Dark Gray
+$darkgray: #2D3237;
+$darkgray-l: #4C5155;
+$darkgray-ll: #6C7073;
+
+// Facebook
+$facebook-color: #3b5998;
+// Twitter
+$twitter-color: #55acee;
+// GooglePlus
+$google-plus-color: #dd4b39;
+// LinkedIn
+$linkedin-color: #0077b5;
+// YouTube
+$youtube-color: #cd201f;
+// GitHub
+$github-color: #999;
+
+// Global susy settings
+$susy: (
+  columns: 24,
+  gutters: 1,
+  math: fluid,
+  output: float,
+  gutter-position: split,
+  global-box-sizing: border-box,
+  use-custom: (
+    box-sizing: true,
+    clearfix: true
+  )
+);
+
+// Responsive
+// $sm-mobile: 320px;
+// $mobile: 479px;
+// $tablet: 767px;
+// $desktop: 1025px;
+
+// Bootstrap vars
+$sm: 768px;
+$md: 992px;
+$lg: 1025px;
+$xl: 1200px;
+
+$base-font-family: 'ClearSans-Regular', Helvetica, Arial, sans-serif;
+$base-font-size: 18px;
+$base-line-height: 22px;
+$base-font-color: #0a131a;
+
+$small-font-size: 16px;
+$large-font-size: 24px;
+
+// Fixed Font
+$fixed-font-family: monospace;
+$fixed-font-size: 85%;
+$fixed-line-height: $base-line-height;
+
+// Headings
+$header-font-family: 'IntelClearPro-Bold', Helvetica, Arial, sans-serif;
+$header-font-color: #0a131a;
+$header-font-weight: normal;
+$h1-font-size: 56px;
+$h2-font-size: 48px; //48
+$h3-font-size: 30px; //30
+$h4-font-size: 24px;
+$h5-font-size: 18px;
+$h6-font-size: 18px;
+
+// Header
+$header-background: $darkgray;
+$header-txt-color: #fff;
+$header-txt-size: 12px;
+
+// Footer
+$footer-background: $header-background;
+$footer-txt-color: $gray-l;
+$footer-txt-color-hover: #fff;
+$footer-txt-size: $base-font-size;
+
+// Buttons
+$btn-txt-transform: uppercase;
+$btn-padding: 10px 25px;
+$btn-radius: 0;
+
+$primary-btn-background: $primary-color-1;
+$primary-btn-background-hover: $secondary-color-1;
+$primary-btn-txt-color: #fff;
+$primary-btn-txt-color-hover: #fff;
+$primary-btn-border-color: $primary-color-1;
+$primary-btn-border-color-hover: $primary-btn-background-hover;
+
+$secondary-btn-background: transparent;
+$secondary-btn-background-hover: $primary-color-1;
+$secondary-btn-txt-color: $primary-color-1;
+$secondary-btn-txt-color-hover: #fff;
+$secondary-btn-border-color: $primary-color-1;
+$secondary-btn-border-color-hover: $primary-color-1;
+
+$secondary-btn-light-background: transparent;
+$secondary-btn-light-background-hover: $primary-color-1;
+$secondary-btn-light-txt-color: #fff;
+$secondary-btn-light-txt-color-hover: #fff;
+$secondary-btn-light-border-color: #fff;
+$secondary-btn-light-border-color-hover: $secondary-btn-light-background-hover;
+
+// Links
+$link-color: $primary-color-1;
+$link-color-hover: lighten($primary-color-1, 5%);
+$link-decoration: none;
+
+$link-color-dark: $secondary-color-1;
+$link-color-hover-dark: lighten($secondary-color-1, 5%);
+
+// Dividers
+$divider: 2px solid;
+$divider-color: $gray-ll;

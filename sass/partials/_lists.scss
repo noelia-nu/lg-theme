@@ -1,0 +1,22 @@
+.cp-list--plus {
+  margin-top: 25px;
+
+  li {
+    border-top: 2px solid $primary-color-1;
+
+    &:first-child {
+      border-top: none;
+    }
+  }
+
+  a {
+    display: block;
+    padding: $btn-padding;
+
+    &:before {
+      @include fa(plus);
+      margin-right: 5px;
+      font-size: 14px; 
+    }
+  }
+}

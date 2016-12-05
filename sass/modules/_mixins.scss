@@ -1,0 +1,190 @@
+@mixin placeholder-global($color, $weight: normal) {
+  ::-webkit-input-placeholder {
+    @if $weight == bold {
+      @include bold;
+    }
+     color: $color;
+     font-family: $base-font-family;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+     @if $weight == bold {
+      @include bold;
+    }
+     color: $color;
+     font-family: $base-font-family;
+  }
+  ::-moz-placeholder { /* Firefox 19 */
+     @if $weight == bold {
+      @include bold;
+    }
+     color: $color;
+     font-family: $base-font-family;
+  }
+  ::-ms-input-placeholder {
+     @if $weight == bold {
+      @include bold;
+    }
+     color: $color;
+     font-family: $base-font-family;
+  }
+}
+
+@mixin custom-scrollbar {
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: $lightgray;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: $gray-l;
+
+    &:hover {
+     background-color: darken($gray-ll, 10%);
+    }
+  }
+}
+
+@mixin box-sizing($box-model: $default-box-sizing) {
+  @if type-of($box-model) == string {
+    $box-model: unquote($box-model);
+  }
+  @include prefixed-properties(css3-boxsizing, $box-sizing-support-threshold, (box-sizing: $box-model));
+}
+
+@mixin circle($size) {
+  height: $size;
+  width: $size;
+  -moz-border-radius: $size;
+  -webkit-border-radius: $size;
+  border-radius: $size;
+}
+
+@mixin color-transition {
+  @include transition-property(color);
+  @include transition-duration(300ms);
+  @include transition-timing-function(ease-in-out);
+}
+
+@mixin background-color-transition {
+  @include transition-property(background-color);
+  @include transition-duration(300ms);
+  @include transition-timing-function(ease-in-out);
+}
+
+@mixin border-color-transition {
+  @include transition-property(border);
+  @include transition-duration(300ms);
+  @include transition-timing-function(ease-in-out);
+}
+
+@mixin img-circle($size) {
+  height: $size;
+  width: $size;
+  -moz-border-radius: $size/2;
+  -webkit-border-radius: $size/2;
+  border-radius: $size/2;
+}
+
+@mixin gutter($position) {
+  $gutter: gutter();
+  @if $position == 'left' {
+    margin-left: $gutter*2;
+    margin-right: 0;
+  }
+  @else if $position == 'right' {
+    margin-left: 0;
+    margin-right: $gutter*2;
+  }
+  @else if $position == 'middle' {
+    margin-left: $gutter;
+    margin-right: $gutter;
+  }
+  @else if $position == 'double-left' {
+    margin-left: $gutter*2;
+    margin-right: 0;
+  }
+  @else if $position == 'double-right' {
+    margin-left: 0;
+    margin-right: $gutter*2;
+  }
+}
+
+@mixin css3-columns ($value) {
+  -webkit-column-count: $value; /* Chrome, Safari, Opera */
+  -moz-column-count: $value; /* Firefox */
+  column-count: $value;
+}
+
+@mixin background-opacity($color, $opacity: 0.9) {
+  background: transparent; /* The Fallback */
+  background: rgba($color, $opacity);
+}
+
+@mixin link($default, $hover) {
+  color: $default;
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    color: $hover;
+  }
+
+  &:link,
+  &:visited {
+    color: $default;
+    text-decoration: none;
+  }
+}
+
+@mixin transition-custom($property, $time: 150ms, $timing: ease-in) {
+  @include transition-property($property);
+  @include transition-duration($time);
+  @include transition-timing-function($timing);
+}
+
+@mixin bold($font: '') {
+  $bold-font: 'IntelClear-Bold';
+  @if $font == pro {
+    $bold-font: 'IntelClearPro-Bold';
+    letter-spacing: 1px;
+  }
+  font-family: $bold-font,"tahoma",Helvetica,"helvetica",Arial,sans-serif;
+  font-weight: normal;
+}
+
+@mixin normal {
+  font-family: "ClearSans-Regular","tahoma",Helvetica,"helvetica",Arial,sans-serif;
+  font-weight: normal;
+}
+
+%small-txt {
+  font-size: $small-font-size;
+}
+
+%large-txt {
+  font-size: $large-font-size;
+}
+
+@mixin fontAwesomeIcon($value) {
+  font-family: 'FontAwesome';
+  content: $value;
+}
+
+@mixin fa($icon) {
+  @extend .fa;
+  @extend .fa-#{$icon}
+}
+
+@mixin clearfix {
+  &:after {
+    content:" ";
+    display:table;
+    clear:both;
+  }
+}
