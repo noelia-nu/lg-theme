@@ -1,0 +1,25 @@
+.cp-menu__container {
+  border-left: 3px solid $secondary-color-1;
+  margin-bottom: 3rem;
+  padding-left: 1rem;
+}
+
+.cp-menu__list {
+  li {
+    margin: 0.25rem 0;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    
+    li {
+      margin-left: 0.5rem;
+
+      &::before {
+        content: "-";
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}

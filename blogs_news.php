@@ -5,38 +5,131 @@
   	
 	<title>Linux Graphics</title>
 </head>
-<body>
+<body class="not-front">
 <?php include('templates/header_general.php'); ?>
 
-<div id="breadcrumb">
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Blogs &amp; News</a></li>
-  </ul>
-</div>
-
 <main class="_container">
-  <h1>Blogs &amp; News</h1>
+  <div id="breadcrumb">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#" class="_active">Blogs &amp; News</a></li>
+    </ul>
+  </div>
+
+  <h1 class="cp-page__title">Blogs &amp; News</h1>
 
   <div class="col-sm-16">
+    <!-- grid list -->
     <div class="cp-grid" role="list">
-      <div class="cp-grid__item" role="listitem">
-        <div class="col-sm-">
+
+      <div class="cp-grid__item _clearfix" role="listitem">
+        <!-- Category list -->
+        <div class="col-sm-4">
+          <a class="cp-node__cat cp-node__cat--1">News</a>
+        </div>
+        <!-- /Category list -->
+
+        <!-- Details list -->
+        <div class="col-sm-20">
+          <img />
+          <h3 class="cp-node__title">Name of the blog post</h3>
+          <div class="cp-node__field">Author: name of author</div>
+          <div class="cp-node__field">November 27, 2017</div>
+
+          <p class="cp-node__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis</p>
+
+          <a class="cp-node__read_more" href="#">Read More</a>
+        </div>
+        <!-- /Details list -->
+      </div>
+
+      <div class="cp-grid__item _clearfix" role="listitem">
+        <!-- Category list -->
+        <div class="col-sm-4">
+          <a class="cp-node__cat cp-node__cat--2">Planet</a>
+        </div>
+        <!-- /Category list -->
+
+        <!-- Details list -->
+        <div class="col-sm-20">
+          <img />
+          <h3 class="cp-node__title">Name of the blog post</h3>
+          <div class="cp-node__field">Author: name of author</div>
+          <div class="cp-node__field">November 27, 2017</div>
+
+          <p class="cp-node__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis</p>
+
+          <a class="cp-node__read_more" href="#">Read More</a>
+        </div>
+        <!-- /Details list -->
+      </div>
+
+      <div class="cp-grid__item _clearfix" role="listitem">
+        <!-- Category list -->
+        <div class="col-sm-4">
+          <a class="cp-node__cat cp-node__cat--3">How to</a>
+        </div>
+        <!-- /Category list -->
+
+        <!-- Details list -->
+        <div class="col-sm-20">
+          <img />
+          <h3 class="cp-node__title">Name of the blog post</h3>
+          <div class="cp-node__field">Author: name of author</div>
+          <div class="cp-node__field">November 27, 2017</div>
+
+          <p class="cp-node__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis</p>
+
+          <a class="cp-node__read_more" href="#">Read More</a>
+        </div>
+        <!-- /Details list -->
+      </div>
+
+      <div class="cp-grid__item _clearfix" role="listitem">
+        <!-- Category list -->
+        <div class="col-sm-4">
+          <a class="cp-node__cat cp-node__cat--4">Blog</a>
+        </div>
+        <!-- /Category list -->
+
+        <!-- Details list -->
+        <div class="col-sm-20">
+          <img />
+          <h3 class="cp-node__title">Name of the blog post</h3>
+          <div class="cp-node__field">Author: name of author</div>
+          <div class="cp-node__field">November 27, 2017</div>
+
+          <p class="cp-node__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis</p>
+
+          <a class="cp-node__read_more" href="#">Read More</a>
+        </div>
+        <!-- /Details list -->
       </div>
     </div>
+    <!-- /grid list -->
   </div>
 
   <div class="col-sm-8">
-    <h3>Archive</h3>
-    <ul class="cp-menu__list">
-      <li><a href="#">2016</a>
-        <ul>
-          <li><a href="#">January (1)</a></li>
-          <li><a href="#">February (1)</a></li>
-        </ul>
-      </li>
-      <li><a href="#">2017</a></li>
-    </ul>
+    <div class="cp-menu__container">
+      <h4>Archive</h4>
+      <ul class="cp-menu__list">
+        <li><a href="#">2016</a>
+          <ul>
+            <li><a href="#">January (1)</a></li>
+            <li><a href="#">February (1)</a></li>
+          </ul>
+        </li>
+        <li><a href="#">2017</a></li>
+      </ul>
+    </div>
+
+    <div class="cp-menu__container">
+      <h4>Categories</h4>
+      <ul class="cp-menu__list">
+        <li><a href="#">2016</a></li>
+        <li><a href="#">2017</a></li>
+      </ul>
+    </div>
   </div>
 </main>
 	

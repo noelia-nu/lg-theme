@@ -13,9 +13,12 @@ $secondary-color-3: #131214; //ash - dark blue
 
 // Grayscale
 // White
-$lightgray: #F0F2F4;
+$lightgray: #F0F2F4; 
 $lightgray-l: #F6F7F8;
 $lightgray-ll: #FFF;
+
+$intel-blue-l: #00aeef; 
+$intel-green: #39cd89;
 
 // Gray
 $gray: #8C9196;
@@ -70,6 +73,7 @@ $base-font-family: 'ClearSans-Regular', Helvetica, Arial, sans-serif;
 $base-font-size: 18px;
 $base-line-height: 22px;
 $base-font-color: #0a131a;
+$base-font-family-bold: 'ClearSans-Bold';
 
 $small-font-size: 16px;
 $large-font-size: 24px;
@@ -94,6 +98,8 @@ $h6-font-size: 18px;
 $header-background: $darkgray;
 $header-txt-color: #fff;
 $header-txt-size: 12px;
+
+$support-txt-color: $darkgray-ll;
 
 // Footer
 $footer-background: $header-background;
@@ -128,8 +134,8 @@ $secondary-btn-light-border-color: #fff;
 $secondary-btn-light-border-color-hover: $secondary-btn-light-background-hover;
 
 // Links
-$link-color: $primary-color-1;
-$link-color-hover: lighten($primary-color-1, 5%);
+$link-color: $secondary-color-1;
+$link-color-hover: $primary-color-1;
 $link-decoration: none;
 
 $link-color-dark: $secondary-color-1;
