@@ -14,6 +14,10 @@
   margin: 3rem 0;
 }
 
+.cp-page__title--detail{
+  margin: 2.5rem 0 .5rem 0;
+}
+
 .cp-node__title {
   color: $primary-color-1;
   margin-bottom: 1.5rem;
@@ -76,6 +80,93 @@
   }
 }
 
+.cp-node__cat--detail {
+  margin: 3rem 0 0 0;
+}
+
 .cp-node__field {
   color: $support-txt-color;
 }
+
+/*Remove margin, general styles*/
+._nomargin--left {
+  margin-left: 0;
+}
+
+._nomargin-right {
+  margin-right: 0;
+}
+
+/*Share socials*/
+.cp-node__social {
+  list-style-type: none;
+  margin: 2rem 0;
+  li{
+    display: inline-block;
+    margin: .5rem;
+    a {
+      color: white;
+      min-height: 35px;
+      min-width: 35px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px 10px;
+      &.--purple {
+        background-color: $facebook-color;
+        &:hover {
+          background-color: lighten($facebook-color, 5%);
+        }
+      }
+      &.--blue {
+        background-color: $twitter-color;
+        &:hover {
+          background-color: lighten($twitter-color, 5%);
+        }
+      }
+      &.--gray {
+        justify-content: flex-start;
+        background-color: $lightgray;
+        border-radius: 17px;
+        color: $support-txt-color;
+        width: 35px;
+        overflow: hidden;
+        @include breakpoint($sm) {
+          padding: 5px 15px;
+          width: auto;
+        }
+        i {
+          margin: 0 10px 0 0;
+        }
+      }
+    }
+  }
+}
+
+/*Read next*/
+.cp-node__read {
+  width: 100%;
+  background-color: $lightgray;
+  box-shadow: inset 0px 3px 10px -4px rgba(0,0,0,0.75);
+  padding: 0 0 3rem 0;
+  margin: 3rem 0 0 0;
+  overflow: hidden;
+  .__read-item {
+    margin-bottom: 2rem;
+  }
+  .__read-title {
+    color: $primary-color-1;
+    margin: 0.5rem 0;
+  }
+  .__read-more {
+    color: $gray;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 0 0 10px;
+    &:hover {
+      color: lighten($gray, 5%);
+    }
+  }
+}
+

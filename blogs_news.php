@@ -39,7 +39,7 @@
 
             <p class="cp-node__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis</p>
 
-            <a class="cp-node__read_more" href="#">Read More</a>
+            <a class="cp-node__read_more" href="/blogs_detail.php">Read More</a>
           </div>
           <!-- /Details list -->
         </div>
@@ -60,7 +60,7 @@
 
             <p class="cp-node__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis</p>
 
-            <a class="cp-node__read_more" href="#">Read More</a>
+            <a class="cp-node__read_more" href="/blogs_detail.php">Read More</a>
           </div>
           <!-- /Details list -->
         </div>
@@ -81,7 +81,7 @@
 
             <p class="cp-node__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis</p>
 
-            <a class="cp-node__read_more" href="#">Read More</a>
+            <a class="cp-node__read_more" href="/blogs_detail.php">Read More</a>
           </div>
           <!-- /Details list -->
         </div>
@@ -102,7 +102,7 @@
 
             <p class="cp-node__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis</p>
 
-            <a class="cp-node__read_more" href="#">Read More</a>
+            <a class="cp-node__read_more" href="/blogs_detail.php">Read More</a>
           </div>
           <!-- /Details list -->
         </div>
