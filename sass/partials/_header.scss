@@ -17,11 +17,11 @@
 
   .cp-btn__secondary--light {
     @extend %primary-button;
-    font-family: 'ClearSans-Bold';
+    font-family: $base-font-family-bold;
   }
 }
 
-@include breakpoint($lg) {
+@include breakpoint($xl) {
   #cp-header {
     &._background--dark {
       .cp-btn__secondary--light {
@@ -90,7 +90,7 @@
   }
 }
 
-@include breakpoint($lg){
+@include breakpoint($xl){
   ._background--dark {
     .cp-menu__link {
       color: #fff;
@@ -133,7 +133,7 @@
   }
 }
 
-@include breakpoint($lg){
+@include breakpoint($xl){
   ._background--dark {
     .cp-menu__item--has-children {
       &::after {
@@ -195,7 +195,7 @@
 }
 
 /* General styles for all menus */
-@media screen and (max-width: $lg - 1){
+@media screen and (max-width: $xl - 1){
   .cbp-spmenu {
     background: $lightgray;
     position: fixed;

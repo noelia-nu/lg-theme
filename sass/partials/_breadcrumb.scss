@@ -1,0 +1,30 @@
+#breadcrumb {
+  font-size: $small-font-size;
+
+  li {
+    display: inline-block;
+
+    &::after {
+      content: '/';
+      margin: 0 5px;
+    }
+
+    &:last-child::after {
+      display: none;
+    }
+  }
+
+  a {
+    color: $support-txt-color;
+
+    &:visited {
+      color: $support-txt-color;
+    }
+
+    &:hover,
+    &:active,
+    &._active {
+      color: $link-color;
+    }
+  }
+}

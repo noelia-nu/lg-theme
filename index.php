@@ -4,7 +4,7 @@
 	<?php include_once('headers.php'); ?>
 	<title>Linux Graphics</title>
 </head>
-<body>
+<body class="front">
 <?php include_once('templates/header.php'); ?>
 
 <main>
