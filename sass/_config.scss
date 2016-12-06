@@ -133,6 +133,13 @@ $secondary-btn-light-txt-color-hover: #fff;
 $secondary-btn-light-border-color: #fff;
 $secondary-btn-light-border-color-hover: $secondary-btn-light-background-hover;
 
+$secondary-btn-dark-background: transparent;
+$secondary-btn-dark-background-hover: $primary-color-1;
+$secondary-btn-dark-txt-color: $primary-color-1;
+$secondary-btn-dark-txt-color-hover: #fff;
+$secondary-btn-dark-border-color: $primary-color-1;
+$secondary-btn-dark-border-color-hover: $secondary-btn-dark-background-hover;
+
 // Links
 $link-color: $secondary-color-1;
 $link-color-hover: $primary-color-1;

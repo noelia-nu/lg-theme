@@ -1,0 +1,15 @@
+#cp-pagination {
+  font-family: $base-font-family-bold;
+  $margin: span(4) + (2*gutter());
+  margin: 2rem 0 2rem $margin;
+  text-transform: uppercase;
+
+  li {
+    display: inline-block;
+  }
+
+  .cp-pagination__item {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+  }
+}

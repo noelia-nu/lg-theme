@@ -72,6 +72,31 @@
   }
 }
 
+%secondary-button-dark {
+  @extend %button;
+  background-color: $secondary-btn-dark-background;
+  border: 2px solid $secondary-btn-dark-border-color;
+  color: $secondary-btn-dark-txt-color;
+
+  &:visited {
+    color: $secondary-btn-dark-txt-color;
+
+    &:hover,
+    &.active {
+      background-color: $secondary-btn-dark-background-hover;
+      border: 2px solid $secondary-btn-dark-border-color-hover;
+      color: $secondary-btn-dark-txt-color-hover;
+    }
+  }
+
+  &:hover,
+  &.active {
+    background-color: $secondary-btn-dark-background-hover;
+    border: 2px solid $secondary-btn-dark-border-color-hover;
+    color: $secondary-btn-dark-txt-color-hover;
+  }
+}
+
 .cp-btn__primary {
   @extend %primary-button;
 }
@@ -82,4 +107,8 @@
 
 .cp-btn__secondary--light {
   @extend %secondary-button-light;
+}
+
+.cp-btn__secondary--dark {
+  @extend %secondary-button-dark;
 }
