@@ -22,12 +22,11 @@
 
   <section id="section1" class="cd-section _background--dark">
   	<div class="content-wrapper">
-  		<div class="_animate--position _animate--position--top">
-        <h4 class="_subheader">MEET INTEL’S OPEN SOURCE GRAPHIC STACK</h4>
-        <h1>INTEL LINUX* GRAPHICS</h1>
-        <p class="_large-txt">Intel offers industry-leading, production-quality 3D Linux graphics drivers for Intel architecture platforms with integrated graphics. </p>
-      </div>
-      <div class="_animate--position _animate--position--bottom" style="margin-top: 25px;">
+      <h4 class="_subheader  _animate--selector">MEET INTEL’S OPEN SOURCE GRAPHIC STACK</h4>
+      <h1 class=" _animate--selector">INTEL LINUX* GRAPHICS</h1>
+      <p class="_large-txt  _animate--selector">Intel offers industry-leading, production-quality 3D Linux graphics drivers for Intel architecture platforms with integrated graphics. </p>
+      
+      <div class="_animate--position _animate--position--bottom  _animate--selector" style="margin-top: 25px;">
         <a class="_inline-block cp-btn__primary">Download</a>
         <a class="_inline-block cp-btn__secondary--light"><span class="fa fa-play"></span> Watch video</a>
       </div>
@@ -37,51 +36,51 @@
 
   <section id="section2" class="cd-section">
   	<div class="content-wrapper">
-  		<h2>Events</h2>
-  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.</p>
+  		<h2 class=" _animate--selector">Events</h2>
+  		<p class=" _animate--selector">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.</p>
   	</div>
   </section><!-- cd-section -->
 
   <section id="section3" class="cd-section">
   	<div class="content-wrapper">
-  		<h2>Help</h2>
-  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.</p>
-  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.</p>
+  		<h2 class="_animate--selector">Help</h2>
+  		<p class="_animate--selector">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.</p>
+  		<p class="_animate--selector">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.</p>
   	</div>
   </section><!-- cd-section -->
 
   <section id="section4" class="cd-section">
   	<div class="content-wrapper">
-  		<h2>Share</h2>
-  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.</p>
+  		<h2 class="_animate--selector">Share</h2>
+  		<p class="_animate--selector">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.</p>
   	</div>
   </section><!-- cd-section -->
 
   <section id="section5" class="cd-section">
     <div class="content-wrapper Started">
-      <h5>03. FIND THE BEST WAY TO INCLUDE LINUX GRAPHICS</h5>
-      <h1>HOW I GET STARTED</h1>
-      <div class="Started__container _container">
+      <h4 class="_animate--selector">03. FIND THE BEST WAY TO INCLUDE LINUX GRAPHICS</h4>
+      <h1 class="_animate--selector">HOW I GET STARTED</h1>
+      <div class="Started__container _container _animate--selector">
         <div class="col-xs-24 col-sm-8">
-          <div class="Started__item">
+          <div class="Started__item  _animate--selector">
             <i class="fa fa-address-book"></i>
-            <h1 class="Started__title">Include it in your own distribution</h1>
+            <h3 class="Started__title">Include it in your own distribution</h3>
             <p class="Started__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum impedit dicta aperiam totam nam nemo aliquid consequatur, fugiat optio neque laudantium facilis voluptas, alias velit aliquam, possimus harum illum quibusdam.</p>
             <a href="" class="Started__button">Action</a>
           </div>
         </div>
         <div class="col-xs-24 col-sm-8">
-          <div class="Started__item">
+          <div class="Started__item  _animate--selector">
             <i class="fa fa-address-book"></i>
-            <h1 class="Started__title">Include it in your own distribution</h1>
+            <h3 class="Started__title">Include it in your own distribution</h3>
             <p class="Started__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum impedit dicta aperiam totam nam nemo aliquid consequatur, fugiat optio neque laudantium facilis voluptas, alias velit aliquam, possimus harum illum quibusdam.</p>
             <a href="" class="Started__button">Action</a>
           </div>
         </div>
         <div class="col-xs-24 col-sm-8">
-          <div class="Started__item">
+          <div class="Started__item  _animate--selector">
             <i class="fa fa-address-book"></i>
-            <h1 class="Started__title">Include it in your own distribution</h1>
+            <h3 class="Started__title">Include it in your own distribution</h3>
             <p class="Started__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum impedit dicta aperiam totam nam nemo aliquid consequatur, fugiat optio neque laudantium facilis voluptas, alias velit aliquam, possimus harum illum quibusdam.</p>
             <a href="" class="Started__button">Action</a>
           </div>

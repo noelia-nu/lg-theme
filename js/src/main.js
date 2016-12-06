@@ -15,26 +15,23 @@
     animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
   function addAnimation(section) {
-    var time = 0;
-    $('#'+section+' .content-wrapper').children().each(function() {
+    var time = 0, t = 0;
+    $('#'+section+' .content-wrapper').children().each(function(i, el) {
       $(this).delay(time).addClass(animationName);
-      time += 800;
+      time = 600 + ( i * 200 );
+    }).find('.Started__item').each(function(i, el) {
+      $(this).delay(t).addClass(animationName).fadeIn();
+      t = 600 + ( i * 200 );
     });
-
-    if(section === 'section5') {
-      setTimeout(function(){
-        var t = 0;
-        $('#'+section+' .content-wrapper .Started__container').find('.Started__item').each(function(i, el) {
-          $(this).delay(t).addClass(animationName).fadeIn();
-          t = 600 + ( i * 200 );
-        });
-      }, 800);
-    }
   }
 
   function removeAnimation(section) {
     $('#'+section+' .content-wrapper').children().each(function() {
       $(this).removeClass(animationName);
+    });
+
+    $('#'+section+' .content-wrapper .Started__container').find('.Started__item').each(function() {
+      $(this).removeClass(animationName).hide();
     });
   }
 
@@ -128,6 +125,8 @@
     $mobileMenu.toggleClass('cbp-spmenu-open' );
   });
 
+  $('._animate--selector').css('opacity', 0);
+  $('.Started__item').hide();
   $(document).ready(function(){
     addAnimation('section1');
   });
